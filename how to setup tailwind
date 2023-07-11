@@ -1,0 +1,13 @@
+1.first create two folders
+    i. dist
+    ii. src
+2. run command on terminal npx tailwindcss init
+3. tailwind.config.js file will be generated after running above command.
+4. write "./dist/*.html" in content array
+5. then in input.css file write three lines which are:
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+6. Then in terminal write this command: 
+    npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+7. then link output css file in index.html file
